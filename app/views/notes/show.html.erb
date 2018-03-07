@@ -1,0 +1,10 @@
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= @note.title %></div>
+  <div class="panel-body"><%= @note.body %></div>
+  <% @note.tags.each do |tag| %>
+      <span class="label label-<%= random_label %>"><%= tag.name.capitalize %></span>
+  <% end %>
+</div>
+
+<%= link_to 'Edit', edit_note_path(@note), class: "btn btn-primary" %> |
+<%= link_to 'Back', notes_path, class: "btn btn-default" %>
