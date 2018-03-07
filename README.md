@@ -25,8 +25,8 @@ http://localhost:3000
 ```
 ### End Points
 
-Got get all notes:
+To get all notes:
 {host}/notes
 
-Got get current user's note:
+To get the current user's note:
 {host}/notes/my_notes
